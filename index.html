@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="info">
+            <p style="font-size: 1.5rem; text-align: center;">Enter the Details</p>
+            <p>Note: Enter Data only if it exists. Do not enter if it doesn't exit. Don't try to put Null</p>
+        </div>
+        <form action="insert.php" method="GET" class="formwrapper">
+            <div class="textflex">
+                <input type="text" name="staffid" id="staffid" placeholder="Enter the Staff ID -> EG: ITF03">
+                <input type="text" name="staffname" id="staffname" placeholder="Enter the Staff Name: ">     
+                <input type="text" name="designation" id="designation" placeholder="Enter the Designation: ">
+                <input type="text" name="special" id="special" placeholder="Enter the Areas of Specialization: ">
+                <input type="text" name="officiallink" id="officiallink" placeholder="Enter the ACOE website link: ">
+                <input type="text" name="phonenumber" id="phonenumber" placeholder="Enter the Staff Phone Number: ">
+                <input type="text" name="mailid" id="mailid" placeholder="Enter the Staff Mail ID: ">
+                <input type="text" name="ownwebsite" id="ownwebsite" placeholder="Enter the Staff Own Website if available: ">
+            </div>
+
+            <div class="textareaGrid">
+                <p class="labelPara">Qualifications</p>
+                <p class="labelPara">Experience</p>
+                <p class="labelPara">Journals</p>
+                <textarea wrap="off" name="qualification" id="qualification" cols="40" rows="10" placeholder="Enter the Qualifications"></textarea>
+                <textarea wrap="off" name="experience" id="experience" cols="40" rows="10" placeholder="Enter the Experience details"></textarea>
+                <textarea wrap="off" name="journals" id="journals" cols="40" rows="10" placeholder="Enter the Journals Details"></textarea>
+
+                <p class="labelPara">FDP</p>
+                <p class="labelPara">Research</p>
+                <p class="labelPara">Research Guidance</p>
+                <textarea wrap="off" name="fdp" id="fdp" cols="40" rows="10" placeholder="Enter the FDP Faculty Development Program Details"></textarea>
+                <textarea wrap="off" name="research" id="research" cols="40" rows="10" placeholder="Enter the Research Details"></textarea>
+                <textarea wrap="off" name="reasearchguidance" id="researchguidance" cols="40" rows="10" placeholder="Enter the Research Guidance Details"></textarea>
+
+                <p class="labelPara">Review</p>
+                <p class="labelPara">Evaluator</p>
+                <p class="labelPara">Awards</p>
+                <textarea wrap="off" name="review" id="review" cols="40" rows="10" placeholder="Enter the Review Details"></textarea>
+                <textarea wrap="off" name="evaluator" id="evaluator" cols="40" rows="10" placeholder="Enter the details for 'Evaluator': "></textarea>
+                <textarea wrap="off" name="awards" id="awards" cols="40" rows="10" placeholder="Enter the details for Awards"></textarea>
+
+                <p class="labelPara">Scholars</p>
+                <p class="labelPara">Activities</p>
+                <p class="labelPara">Countries</p>
+                <textarea wrap="off" name="scholars" id="scholars" cols="40" rows="10" placeholder="Enter the details for scholars: "></textarea>
+                <textarea wrap="off" name="activities" id="activities" cols="40" rows="10" placeholder="Enter the details for Activities"></textarea>
+                <textarea wrap="off" name="country" id="country" cols="40" rows="10" placeholder="Enter the Countries Visited details: "></textarea>
+
+                <p class="labelPara">Lectures</p>
+                <p class="labelPara">Seminar</p>
+                <p class="labelPara">Honors</p>
+                <textarea wrap="off" name="lectures" id="lectures" cols="40" rows="10" placeholder="Enter the Lectures Details"></textarea>
+                <textarea wrap="off" name="seminar" id="seminar" cols="40" rows="10" placeholder="Enter the Seminar Details"></textarea>
+                <textarea wrap="off" name="honors" id="honors" cols="40" rows="10" placeholder="Enter the Honors Details"></textarea>
+
+                <p class="labelPara">P Chaired</p>
+                <p class="labelPara">P Attended</p>
+                <p class="labelPara">P Organized</p>
+                <textarea wrap="off" name="prochair" id="prochair" cols="40" rows="10" placeholder="Enter the details of the programs chaired"></textarea>
+                <textarea wrap="off" name="proattend" id="proattend" cols="40" rows="10" placeholder="Enter the details of the Programs attended"></textarea>
+                <textarea wrap="off" name="proorganise" id="proorganise" cols="40" rows="10" placeholder="Enter the details of the programs organized"></textarea>
+
+
+                <div class="lastInput">
+                    <div class="wrapper">
+                        <p class="labelPara">Projects</p>
+                        <textarea wrap="off" name="projects" id="projects" cols="40" rows="10" placeholder="Enter the Details of the Projects"></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <div style="height: 2rem;"></div>
+            <div class="wrapper"><button class="button" type="submit">Submit</button></div>
+            <div style="height: 5rem;"></div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Required Fields.
+    
+    fid
+    imageset
+    general details
+    qualification
+    experience
+    journals
+    FDP
+    Reserach
+    Reserach Guidance
+    Review
+    Evaluator
+    awards
+    scholars
+    activities
+    country visit
+    lectures
+    seminar
+
+    honors
+    programs chaired
+    programs attended
+    programs organised
+    projects
+
+    
+ -->
